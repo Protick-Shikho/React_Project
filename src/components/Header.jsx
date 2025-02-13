@@ -57,7 +57,7 @@ const Header = () => {
       <p>Stay Ahead in the Game!</p>
     </section>
     
-    hello
+    hello world
     </div>
   );
 };
