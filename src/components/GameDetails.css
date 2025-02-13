@@ -1,0 +1,45 @@
+.game-details {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: white;
+  }
+  
+  .game-image img {
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  .game-info {
+    max-width: 400px;
+  }
+  
+  .btn {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+  }
+  
+  .play {
+    background: #555;
+    color: white;
+  }
+  
+  .tags {
+    margin-top: 10px;
+  }
+  
+  .tags span {
+    background: lightgray;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
