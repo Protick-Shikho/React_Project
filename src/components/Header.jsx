@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div>
       <div>
-        <img src={bgImage} className="bgImage" alt="bgImage"/>
+        <img src={bgImage} className="bgImage" alt="bgImage" />
       </div>
       <header className="header">
         <div className="menu-container">
@@ -33,10 +33,18 @@ const Header = () => {
         <div className="logo">StrikeForce</div>
         <nav>
           <ul>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li>
+              <a href="#">Games</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
           </ul>
         </nav>
 
@@ -48,22 +56,35 @@ const Header = () => {
         </div>
       </header>
 
-
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <button className="close-btn" onClick={closeSidebar}>
           &times;
         </button>
         <ul>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li>
+            <a href="#">Games</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
         </ul>
       </div>
 
       <section className="hero">
-        <h1>Your Ultimate Gaming Hub</h1>
-        <p>Stay Ahead in the Game!</p>
+        <div className="hero-title">Your Ultimate Gaming Hub</div>
+        <div className="hero-subtitle">Stay Ahead in the Game!</div>
+        <div className="search-container">
+          <input type="text" id="search" className="search-input" />
+          <label htmlFor="search" className="search-label">
+            Search
+          </label>
+        </div>
       </section>
     </div>
   );

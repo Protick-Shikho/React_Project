@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+
 
 * {
   margin: 0;
@@ -170,6 +173,53 @@ nav ul li a:hover {
 }
 
 .hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 40px 0;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: 'Impact', sans-serif;
+  font-size: 4em;
+  margin-top: 60px;
+}
+
+.hero-subtitle {
+  font-family: 'Zen Dots', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-label {
+  font-family: 'Zen Dots', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.search-input {
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 1.5em;
+  padding: 5px;
+}
+.search-input:hover {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
