@@ -24,7 +24,7 @@
   position: fixed;
   top: 20px;
   left: 50px;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
   font-family: 'Stalinist One', cursive;
   color: rgb(7, 7, 7);
@@ -160,10 +160,12 @@ nav ul li a:hover {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
+  width: 100%;  /* Ensures the image spans the full width of the viewport */
+  height: auto;  /* Automatically adjusts the height to maintain aspect ratio */
+  background-size: cover;  /* Ensures the image covers the area without distortion */
+  background-position: center;  /* Centers the image */
   filter: brightness(100%);
+  opacity: 0.4;
   z-index: 0;
 }
 
